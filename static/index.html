@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <link rel="icon" type="image/png" href="https://i.imgur.com/V0CT2dF.png">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  		<meta name="description" content="Download public domain Ebooks (PDFs) and audiobooks using BitTorrent, and WebTorrent in the Browser. Approximately 4000 freely available Torrents!">
+		<title>SOLOMON'S HOUSE</title>
+    
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--<script>
+		// https://gist.github.com/youngchief-btw/d8c327ef245f2e9998997a41c7b34e70
+			if (location.protocol === "http:") {
+		  		location.replace(window.location.href.replace("http:", "https:"));
+			}
+		</script>!-->
+    
+		<script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/webtorrent@latest/webtorrent.min.js"></script>
+
+		<script src="//momentjs.com/downloads/moment.min.js"></script>
+		<!--<script src="https://cdn.jsdelivr.net/npm/webtorrent@latest/webtorrent.min.js"></script>!-->
+		
+ 		<!--<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.12.1/r-2.3.0/rg-1.2.0/sc-2.0.7/datatables.min.js"></script>!-->
+ 		<link href="https://cdn.datatables.net/v/bs5/dt-1.13.4/r-2.4.1/rg-1.3.1/datatables.min.css" rel="stylesheet"/>
+		<script src="https://cdn.datatables.net/v/bs5/dt-1.13.4/r-2.4.1/rg-1.3.1/datatables.min.js"></script>
+ 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script
+			  src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+			  integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY="
+			  crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/pepper-grinder/jquery-ui.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/caret/1.3.7/jquery.caret.min.js" integrity="sha512-DR6H+EMq4MRv9T/QJGF4zuiGrnzTM2gRVeLb5DOll25f3Nfx3dQp/NlneENuIwRHngZ3eN6w9jqqybT3Lwq+4A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="lib/anchor.js"></script>
+		<script src="lib/util.js"></script>
+    
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/3d-force-graph-vr"></script>		
+<script src="
+https://cdn.jsdelivr.net/npm/three-spritetext@1.10.0/dist/three-spritetext.min.js
+"></script>
+	<!--<script src="client/models/worldSpiritModel.js"></script>
+	<script src="client/controllers/worldSpiritController.js"></script>!-->
+
+
+	<script src="client/models/mermaidModel.js"></script>
+	<script src="client/models/graphModel.js"></script>
+	<script src="client/models/indexModel.js"></script>
+	<script src="client/models/uploadModel.js"></script>
+
+	<script src="client/assertions/mermaidAssertion.js"></script>
+	<script src="client/assertions/torrentsAssertion.js"></script>
+	<!--<script src="client/models/researchModel.js"></script>!-->
+	<script src="client/controllers/webTorrentController.js"></script>
+	<script src="client/controllers/mermaidController.js"></script>
+	<script src="client/controllers/homeController.js"></script>
+	<script src="client/controllers/authorsController.js"></script>
+	<script src="client/controllers/torrentsController.js"></script>
+	<script src="client/controllers/searchController.js"></script>
+	<script src="client/controllers/publishersController.js"></script>
+	<script src="client/controllers/classesController.js"></script>
+	<script src="client/controllers/graphController.js"></script>
+	<script src="client/controllers/headerController.js"></script>
+	<!--<script src="client/controllers/stGeorgeController.js"></script>
+	<script src="client/controllers/payoutController.js"></script>
+<script src="client/controllers/atlantisCoinController.js"></script>!-->
+	<script src="client/controllers/indexController.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@300&family=Bitcount+Prop+Single:wght@100..900&family=Pirata+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Egyptian+Hieroglyphs&display=swap" rel="stylesheet">
+  </head>
+	<body>
+		<!--<div class="popupImage" id="popupImage"><img src="img/hg.jpeg"><span class="web3Loader"></span><span class="web3Status"></span></div>
+		<div class="popupImage" id="popupImage2"><img src="img/hg2.jpeg"><span class="web3Loader"></span><span class="web3Status"></span></div>!-->
+		<header>
+		
+			
+
+		</header>
+
+		<!--<div id="overlay">
+		</div>!-->
+
+    <div class="authors ANCHOR_partial">
+		</div>
+    <div class="publishers ANCHOR_partial">
+		</div>
+
+		<div class="publisher ANCHOR_partial">
+		</div>
+
+	<!--	<div class="advanced_search ANCHOR_partial">
+		</div> !-->
+
+		<div class="home ANCHOR_partial">
+		</div>
+		<div class="torrents ANCHOR_partial">
+
+		</div>
+
+
+		<div class="torrent ANCHOR_partial">
+
+		</div>
+
+
+
+		<div class="class ANCHOR_partial">
+		</div>
+
+		<div class="classes ANCHOR_partial">
+		</div>
+
+
+		<div class="top10 ANCHOR_partial">
+		</div>
+
+		<div class="upload ANCHOR_partial">
+
+		</div>
+
+
+		<div class="source ANCHOR_partial">
+
+		</div>
+
+		<div class="author ANCHOR_partial">
+		</div>
+
+
+
+		
+
+	</body>
+</html>

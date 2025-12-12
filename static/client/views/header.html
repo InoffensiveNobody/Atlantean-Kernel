@@ -1,0 +1,131 @@
+
+
+<div class="mobile_title">
+  
+    
+	<a href="#" id="mobile_menu">≡</a>
+	<!--<a href="#torrents" class="ANCHOR torrents"><img src="https://i.imgur.com/vzcmytq.png" id="stupa"></a>!-->
+	<h1 class="mobile_h1"><a class="ANCHOR home" href="#home">propagate.info</a><span id="logos_span">Tools of Mankind</span></h1>
+</div>
+<!--<a href="#torrents" class="ANCHOR torrents"><img src="https://i.imgur.com/vzcmytq.png" id="stupa"></a>!-->
+<h1 class="desktop_h1"><a class="ANCHOR home" href="#home">propagate.info</a><span id="logos_span">Tools of Mankind</span></h1>
+
+
+<div class="mobile_menu">
+	<!--<div class="buoy_div mobile_buoy_div">
+		
+	</div>!-->
+	<div class="search">
+		<ul id="search_ul"> 
+			<li class="search_sources"><input class="searchField search_sources_input" placeholder="Torrents"><ul class="autosuggestBox"></ul></li>
+			<li class="search_authors"><input class="searchField search_authors_input" placeholder="Authors"><ul class="autosuggestBox"></ul></li>
+			<li class="search_classes"><input class="searchField search_classes_input" placeholder="Classes"><ul class="autosuggestBox"></ul></li>
+			<li class="search_publisher"><input class="searchField search_publishers_input" placeholder="Publisher"><ul class="autosuggestBox"></ul></li>
+
+		</ul>
+	</div>
+	<br>
+	<br>
+	<br>
+	<ul class="mobile_tabs">
+			<li><a href="#torrents" class="ANCHOR torrents headerTab torrentTab">Torrents</a></li>
+			<li><a href="#top10" class="ANCHOR top10 headerTab top10Tab">Top 10</a></li>
+			<li><a href="#authors" class="ANCHOR authors headerTab authorsTab">Authors</a></li>
+			<li><a href="#classes" class="ANCHOR classes headerTab classesTab">Classes</a></li>
+			<li><a href="#publishers" class="ANCHOR publishers headerTab publishersTab">Publishers</a></li>
+
+    
+
+			<!--<li><a href="#world_spirit" class="ANCHOR world_spirit headerTab worldSpiritTab">Forum</a></li>!-->
+	</ul><br>
+	<ul class="mobile_panel">
+    <!--<li class="torrents_li"><a target="_blank" href="https://drive.google.com/file/d/1DtXUfYlaBz94zK-nAswv24QdlzI9vOpB/view?usp=sharing">All Torrents (.zip)</a></li>!-->
+		<!--<li class="user_li"><a class="ANCHOR user user_profile" href="#user">Profile</a></li>
+		<li class="logout_li"><a class="logout" href="#">Logout</a></li>!-->
+		<!--<li class="upload_li"><a href="#upload" class="ANCHOR upload upload_panel">Upload</a></li>!-->
+    
+    
+    <!--<li class="torrents_li"><a class="stat">Torrents: <span class="stat torrents_stat"></span></a></li>		
+    <li class="snatches_li"><a class="stat">Snatches: <span class="stat snatches"></span></a></li>!-->
+		
+		<!--<li class="login_li"><a href="#login" class="ANCHOR login">Login</a></li>
+  <li class="reg_li"><a href="#register" class="ANCHOR register">Register</a></li>!-->
+	</ul>
+</div>
+
+
+<!--<div class="buoy_div">
+	<select class="buoy_select">
+	</select>
+</div>!-->
+<script>
+	setH1();
+	
+</script>
+<div class="panel">
+	<ul>
+		<script>
+			$(document).ready(function () {
+			    $(".logout").click(function(e){
+					e.preventDefault();
+					logout();
+				})
+				
+				$(".user_profile").click(function(e){
+					e.preventDefault();
+					ANCHOR.route("#user?buoy="+ getBuoy().uuid + "&uuid=" + user.uuid)
+				})
+				
+				//setPanel();
+				
+			});
+			
+
+		
+		</script>
+    <!--<li class="torrents_li"><a target="_blank" href="https://drive.google.com/file/d/1DtXUfYlaBz94zK-nAswv24QdlzI9vOpB/view?usp=sharing">All Torrents (.zip)</a></li>!-->
+	  
+		<!--<li class="user_li"><a class="user_profile" href="#user">Profile</a></li>
+		<li class="logout_li"><a class="logout" href="#">Logout</a></li>!-->
+
+    	<!--<li class="upload_li"><a href="#upload" class="ANCHOR upload upload_panel">Upload</a></li>!-->
+ 
+    <!--<li class="torrents_li"><a class="stat">Torrents: <span class="stat torrents_stat"></span></a></li>		
+    <li class="snatches_li"><a class="stat">Snatches: <span class="stat snatches"></span></a></li>!-->
+		<!--
+		<li class="login_li"><a href="#login" class="ANCHOR login">Login</a></li>
+		<li class="reg_li"><a href="#register" class="ANCHOR register">Register</a></li>!-->
+		
+		
+
+	</ul>
+</div>
+<div class="tabs">
+	<ul>
+		<li><a href="#torrents" class="ANCHOR torrents headerTab torrentTab">Torrents</a></li>
+    
+		
+		<li><a href="#authors" class="ANCHOR authors headerTab authorsTab">Authors</a></li>
+
+		<li><a href="#classes" class="ANCHOR classes headerTab classesTab">Classes</a></li>
+		<li><a href="#publishers" class="ANCHOR publishers headerTab publishersTab">Publishers</a></li>
+		<li><a href="#top10" class="ANCHOR top10 headerTab top10Tab">Top 10</a></li>
+		<!--<li><a href="#world_spirit" class="ANCHOR world_spirit headerTab worldSpiritTab">Forum</a></li>!-->
+		<!--<li><a href="#graph" class="ANCHOR graph headerTab graphTab">VR Graph</a></li>!-->
+
+		
+	</ul>
+	<script>
+		setTabs();
+		
+	</script>
+</div>
+
+<div class="search desktop_search">
+	<ul id="search_ul"> 
+		<li class="search_sources"><input class="searchField search_sources_input" placeholder="Torrents"><ul class="autosuggestBox"></ul></li>
+			<li class="search_authors"><input class="searchField search_authors_input" placeholder="Authors"><ul class="autosuggestBox"></ul></li>
+			<li class="search_classes"><input class="searchField search_classes_input" placeholder="Classes"><ul class="autosuggestBox"></ul></li>
+			<li class="search_publisher"><input class="searchField search_publishers_input" placeholder="Publishers"><ul class="autosuggestBox"></ul></li>
+	</ul>
+</div>

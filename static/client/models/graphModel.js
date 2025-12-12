@@ -1,0 +1,6 @@
+var gData = {
+	nodes : [
+	],
+	links : [
+	]
+}
