@@ -6,7 +6,7 @@ My site is propagate.info, meant for public domain PDFs and audiobooks. Starting
 
 **GETTING STARTED**
 
-The server is express/node.js, and the Database is Neo4j; downloads work using WebTorrent in the Browser (different from web-seeds). 
+The server is express/node.js, and the Database is Neo4j; downloads work using WebTorrent in the Browser (different from web-seeds). The Library renders JQuery DataTables and a d3 graph to the client.
 
 To get started, you will need to:
 
@@ -14,7 +14,7 @@ To get started, you will need to:
 
 *Edit config.js and enter your Neo4j credentials.*
 
-*Edit the Torrents model under static/client/models* Insert Source types (such as Documentary, or Renaissance Art), edition_torrent media (such as Ebook or Concert), and edition_torrent format (such as PDF or mp3). We do not currently support codecs or bitrates, so I would recommend editing your formats to be more specific, like mp3 (192kbps), mp3 (V0), x264 (1080p HD), etc. For perspective, an Ebook would be [media] and a PDF vs djvu would be [format]. The s:Source.type could be "Lecture" or "Letter." So "there exists a Letter, holding Ebook media, of the formats PDF and djvu."
+*Edit the Torrents model under static/client/models* Insert Source types (such as Documentary, or Renaissance Art), edition_torrent media (such as Ebook or Concert), and edition_torrent format (such as PDF or mp3). We do not currently support codecs or bitrates, so I would recommend editing your formats to be more specific, like mp3 (192kbps), mp3 (V0), x264 (1080p HD), etc. For perspective, an Ebook would be [media] and a PDF vs djvu would be [format]. The way Gazelle works is, PDFs and djvus of the same Edition are listed under the same DataTable heading.
 
 *I am not currently providing the code to produce uploads*. I may create a Neo4j uploader based on file names in the future. If you want to write the code yourself, you need to save the file.length in TOFLOAT(bytes) to t:Torrent.size, and set :Torrent.release = "random_sounding_release_name". All the files for one magnetURI should have the same Release Name. Now if you want to have multiple releases, you must have various magnetURIs with different release names, and edit the webTorrent.js controller to add the torrent based on release. 
 
