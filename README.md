@@ -14,7 +14,7 @@ To get started, you will need to:
 
 *Edit config.js and enter your Neo4j credentials.*
 
-*Edit the Torrents model under static/client/models* Insert Source types (such as Documentary, or Renaissance Art), edition_torrent media (such as Ebook or Concert), and edition_torrent format (such as PDF or mp3). We do not currently support codecs or bitrates, so I would recommend editing your formats to be more specific, like mp3 (192kbps), mp3 (V0), x264 (1080p HD), etc.  
+*Edit the Torrents model under static/client/models* Insert Source types (such as Documentary, or Renaissance Art), edition_torrent media (such as Ebook or Concert), and edition_torrent format (such as PDF or mp3). We do not currently support codecs or bitrates, so I would recommend editing your formats to be more specific, like mp3 (192kbps), mp3 (V0), x264 (1080p HD), etc. For perspective, an Ebook would be [media] and a PDF vs djvu would be [format]. The s:Source.type could be "Lecture" or "Letter." So "there exists a Letter, holding Ebook media, of the formats PDF and djvu."
 
 *Edit the magnetURI in static/client/controllers/webTorrent.js*
 
